@@ -1,0 +1,2 @@
+name,brName,avgTime,sem,repeats,minValue,maxValue,earliestTime,latestTime
+Login_start,chromium,3725,0,1,3725,3725,"31/07/2023, 18:42:22","31/07/2023, 18:42:22"

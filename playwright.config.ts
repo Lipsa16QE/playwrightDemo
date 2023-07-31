@@ -32,7 +32,13 @@ const config: PlaywrightTestConfig = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter:  [['allure-playwright', {
+  reporter: process.env.CI
+    ? [
+      ["junit", { outputFile: "results.xml" }],
+      ["html", { open: "never" }],
+    ]
+    : [["html", { open: "on-failure" }]]
+  /*reporter:  [['allure-playwright', {
     detail: true,
     outputFolder: resolve(__dirname, `projects/${projectVar}/test-results/allure`),
     suiteTitle: false
@@ -40,8 +46,8 @@ const config: PlaywrightTestConfig = {
    ["html", {
     open: process.env.CI ? "never" : "on-failure", 
     outputFolder: resolve(__dirname, `projects/${projectVar}/test-results/html`)
-  }] 
-  ],
+  }] */
+  ,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
@@ -52,6 +58,7 @@ const config: PlaywrightTestConfig = {
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on",
     video: "on-first-retry",
+    storageState: 'storageState.json'
   },
 
   /* Configure projects for major browsers */
@@ -63,21 +70,23 @@ const config: PlaywrightTestConfig = {
         ...devices['Desktop Chrome'],
       },
     },
-/*
-    {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-      },
-    },
 
-    {
-      name: 'webkit',
-      use: {
-        ...devices['Desktop Safari'],
-      },
-    },
-    */
+
+    /*
+        {
+          name: 'firefox',
+          use: {
+            ...devices['Desktop Firefox'],
+          },
+        },
+    
+        {
+          name: 'webkit',
+          use: {
+            ...devices['Desktop Safari'],
+          },
+        },
+        */
 
     /* Test against mobile viewports. */
     // {

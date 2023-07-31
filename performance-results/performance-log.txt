@@ -1,0 +1,15 @@
+{"startDisplayTime":"31/07/2023, 18:22:24","instanceID":"inst2a6c4607be824e878e3dc1cee6ee603f"}
+{"startDisplayTime":"31/07/2023, 18:23:34","instanceID":"inst6c5ca50182f9c7c2ed6c52fbd2635b9b"}
+{"startDisplayTime":"31/07/2023, 18:24:41","instanceID":"inst4224c9890ded0e2bc2cf1784e418d03a"}
+{"startDisplayTime":"31/07/2023, 18:27:18","instanceID":"inst922ea8654374c593fd4db4930df32938"}
+{"startDisplayTime":"31/07/2023, 18:32:34","instanceID":"instea1d2f195a6ddfb73337cf99239c81cb"}
+{"startDisplayTime":"31/07/2023, 18:33:41","instanceID":"instbfa14f857406a4058cc82e8b227d8550"}
+{"startDisplayTime":"31/07/2023, 18:34:17","instanceID":"inst0a8bc8ef2c8431c56acb81f7cba328e0"}
+{"startDisplayTime":"31/07/2023, 18:36:13","instanceID":"inst8aeef5fc31f7dd796ccec1efbd72415f"}
+{"startDisplayTime":"31/07/2023, 18:37:06","instanceID":"inst59c4951cc01ccf8e893fc8881f03378d"}
+{"startDisplayTime":"31/07/2023, 18:38:27","instanceID":"instd5cd2c4693d9cc2e8f11082ba97d7849"}
+{"startDisplayTime":"31/07/2023, 18:40:01","instanceID":"inst5d4678d52d6e2dc3aad1f0cc74c3331e"}
+{"startDisplayTime":"31/07/2023, 18:40:17","instanceID":"instd2689c2c18ed53ddf0330c60b9993d8d"}
+{"startDisplayTime":"31/07/2023, 18:42:21","instanceID":"inst67cad8840648cf4f260f203a64150fb6"}
+{"name":"Login_start","brName":"chromium","id":"456948c998e4f2c5bf881915d74e339d","instanceId":"inst7cda12a37e5e648354965372db6c41a5","startTime":1690818142353,"endTime":1690818146078,"startDisplayTime":"31/07/2023, 18:42:22","duration":3725,"isTestPassed":true}
+{"startDisplayTime":"31/07/2023, 18:43:14","instanceID":"inst78e2f6897a881371197e5ae47df2cedf"}
